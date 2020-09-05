@@ -17,3 +17,6 @@ td {
     background-color: slategray;
     border-bottom: solid black;
 }
+form {
+    background-color: orange;
+}
