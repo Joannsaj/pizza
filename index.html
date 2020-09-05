@@ -126,23 +126,27 @@
                         </select>
                         <span class="btn btn-primary" id="add-address">Another address</span>
                     </div>
-                    <div id="address">
-                        <h2>ENTER YOUR ADDRESS</h2>
-                        <div class="address">
+                    <div class="address hide">
+                        <h2 class="btn-dark">ENTER YOUR ADDRESS</h2>
+                        <div id="address">
+                            <div class="form-group">
+                                <label for="new-name">Name</label>
+                                <input type="text" class="form-control" id="new-name" placeholder="NAME">
+                            </div>
                             <div class="form-group">
                                 <label for="new-street">Street</label>
-                                <input type="text" class="form-control new-street">
+                                <input type="text" class="form-control new-street" placeholder="STREET">
                             </div>
                             <div class="form-group">
                                 <label for="new-city">City</label>
-                                <input type="text" class="form-control new-city">
+                                <input type="text" class="form-control new-city" placeholder="CITY">
                             </div>
-                            <div class="form-group">
-                                <label for="new-county">County</label>
-                                <input type="text" class="form-control new-county">
-                            </div>
+                            <label for="phone">Enter your phone number:</label>
+
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                         </div>
                     </div>
+                    <small class="hide">Format: 123-456-7890</small>
                     <button type="submit" class="btn-dark">Checkout</button>
                 </form>
             </div>

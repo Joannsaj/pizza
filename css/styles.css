@@ -20,7 +20,7 @@ td {
 .pizza {
     background-color: orange;
 }
-#address {
+.address {
     background-image: url(../images/download.png);
     width: 100%;
 }
