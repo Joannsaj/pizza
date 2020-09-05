@@ -24,3 +24,7 @@ td {
     background-image: url(../images/download.png);
     width: 100%;
 }
+footer {
+    background-color: orange;
+    height: 3cm;
+}
