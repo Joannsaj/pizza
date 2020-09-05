@@ -97,32 +97,53 @@
     </div>
     <div class="container">
         <div class="row order">
-            <div class="col-md-12 text-center">
+            <div class="col-md-12 ">
                 <h1>SELECT YOUR ORDER</h1>
                 <form action="">
-                    <label for="cars">Choose a size:</label>
-                    <select multiple class="form-control" id="" name="size">
-                        <option value="28,000">Large</option>
-                        <option value="20,000">Medium</option>
-                        <option value="15,000">Small</option>
-                    </select>
-                    <label for="crust">Choose a crust:</label>
-                    <select multiple class="form-control" id="" name="crust">
-                        <option value="3,000">Crispy</option>
-                        <option value="5,000">Stuffed</option>
-                        <option value="4,000">Gluten free</option>
-                    </select>
-                    <label for="toppings">Choose a topping:</label>
-                    <select multiple class="form-control" id="" name="toppings">
-                        <option value="3,000">Pepperoni</option>
-                        <option value="5,000">Mushrooms</option>
-                        <option value="4,000">Onions</option>
-                        <option value="3,000">Sausage</option>
-                        <option value="5,000">Bacon</option>
-                        <option value="4,000">Black olives</option>
-                        <option value="3,000">Green peppers</option>
-                        <option value="5,000">Pineapple</option>
-                    </select>
+                    <div class="pizza">
+                        <label for="cars">Choose a size:</label>
+                        <select multiple class="form-control" id="" name="size">
+                            <option value="28,000">Large</option>
+                            <option value="20,000">Medium</option>
+                            <option value="15,000">Small</option>
+                        </select>
+                        <label for="crust">Choose a crust:</label>
+                        <select multiple class="form-control" id="" name="crust">
+                            <option value="3,000">Crispy</option>
+                            <option value="5,000">Stuffed</option>
+                            <option value="4,000">Gluten free</option>
+                        </select>
+                        <label for="toppings">Choose a topping:</label>
+                        <select multiple class="form-control" id="" name="toppings">
+                            <option value="4,500">Pepperoni</option>
+                            <option value="3,000">Mushrooms</option>
+                            <option value="1,500">Onions</option>
+                            <option value="3,000">Sausage</option>
+                            <option value="4,500">Bacon</option>
+                            <option value="4,500">Black olives</option>
+                            <option value="1,500">Green peppers</option>
+                            <option value="2,500">Pineapple</option>
+                        </select>
+                        <span class="btn btn-primary" id="add-address">Another address</span>
+                    </div>
+                    <div id="address">
+                        <h2>ENTER YOUR ADDRESS</h2>
+                        <div class="address">
+                            <div class="form-group">
+                                <label for="new-street">Street</label>
+                                <input type="text" class="form-control new-street">
+                            </div>
+                            <div class="form-group">
+                                <label for="new-city">City</label>
+                                <input type="text" class="form-control new-city">
+                            </div>
+                            <div class="form-group">
+                                <label for="new-county">County</label>
+                                <input type="text" class="form-control new-county">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-dark">Checkout</button>
                 </form>
             </div>
         </div>
