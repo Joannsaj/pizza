@@ -1,3 +1,19 @@
 .jambotron {
     background-color: orange;
 }
+.container-fluid {
+    background-image: url(../images/download.png);
+    width: 100%;
+}
+table, th, td {
+    border-radius: 25px;
+  }
+th {
+    background-color: rosybrown;
+    border-bottom: solid black;
+    border-top: solid black;
+}  
+td {
+    background-color: slategray;
+    border-bottom: solid black;
+}
