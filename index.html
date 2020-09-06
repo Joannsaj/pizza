@@ -101,45 +101,45 @@
                 <h1>SELECT YOUR ORDER</h1>
                 <form action="">
                     <div class="pizza">
-                        <label for="cars">Choose a size:</label>
-                        <select multiple class="form-control" id="" name="size">
-                            <option value="28,000">Large</option>
-                            <option value="20,000">Medium</option>
-                            <option value="15,000">Small</option>
+                        <label for="size">Choose a size:</label>
+                        <select multiple class="form-control" id="" name="size" required>
+                            <option value="Large">Large</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Small">Small</option>
                         </select>
                         <label for="crust">Choose a crust:</label>
-                        <select multiple class="form-control" id="" name="crust">
-                            <option value="3,000">Crispy</option>
-                            <option value="5,000">Stuffed</option>
-                            <option value="4,000">Gluten free</option>
+                        <select multiple class="form-control" id="" name="crust" required>
+                            <option value="Crispy">Crispy</option>
+                            <option value="Stuffed">Stuffed</option>
+                            <option value="Gluten free">Gluten free</option>
                         </select>
                         <label for="toppings">Choose a topping:</label>
-                        <select multiple class="form-control" id="" name="toppings">
-                            <option value="4,500">Pepperoni</option>
-                            <option value="3,000">Mushrooms</option>
-                            <option value="1,500">Onions</option>
-                            <option value="3,000">Sausage</option>
-                            <option value="4,500">Bacon</option>
-                            <option value="4,500">Black olives</option>
-                            <option value="1,500">Green peppers</option>
-                            <option value="2,500">Pineapple</option>
+                        <select multiple class="form-control" id="" name="toppings" required>
+                            <option value="Pepperoni">Pepperoni</option>
+                            <option value="Mushrooms">Mushrooms</option>
+                            <option value="Onions">Onions</option>
+                            <option value="Sausage">Sausage</option>
+                            <option value="Bacon">Bacon</option>
+                            <option value="Black olives">Black olives</option>
+                            <option value="Green peppers">Green peppers</option>
+                            <option value="Pineapple">Pineapple</option>
                         </select>
-                        <span class="btn btn-primary" id="add-address">Delivery</span>
+                        <span class="btn btn-primary" id="add-pizza">Add pizza</span>
                     </div>
                     <div class="address hide">
                         <h2 class="btn-dark">ENTER YOUR ADDRESS</h2>
                         <div id="address">
                             <div class="form-group">
                                 <label for="new-name">Name</label>
-                                <input type="text" class="form-control" id="new-name" placeholder="NAME">
+                                <input type="text" class="form-control" id="new-name" placeholder="NAME" required>
                             </div>
                             <div class="form-group">
                                 <label for="new-street">Street</label>
-                                <input type="text" class="form-control new-street" placeholder="STREET">
+                                <input type="text" class="form-control new-street" placeholder="STREET" required>
                             </div>
                             <div class="form-group">
                                 <label for="new-city">City</label>
-                                <input type="text" class="form-control new-city" placeholder="CITY">
+                                <input type="text" class="form-control new-city" placeholder="CITY" required>
                             </div>
                             <label for="phone">Enter your phone number:</label>
 

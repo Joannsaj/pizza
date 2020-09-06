@@ -22,7 +22,10 @@ td {
 }
 .address {
     background-image: url(../images/download.png);
-    width: 100%;
+    width: 100%
+}
+.hide {
+    display: none;
 }
 footer {
     background-color: orange;
