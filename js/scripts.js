@@ -107,7 +107,7 @@ $(document).ready(function () {
             totalCost += pizzasOrdered[i].getPizzaPrice();
         }
         console.log(totalCost);
-        alert("Your order for a" + " " + newPizza.size + " " + "pizza with" + " " + newPizza.topping + " " + "toppings and a" + newPizza.crust + " " + "crust, has been received. Your bill is UGX" + " " + totalCost);
+        alert("Your order for a" + " " + newPizza.size + "" + getSizePrice + " " + "pizza with" + " " + newPizza.topping + " " + "toppings and a" + newPizza.crust + " " + "crust, has been received. Your bill is UGX" + " " + totalCost);
         $(".deliver").show();
     });
     $("#continue").click(function () {
