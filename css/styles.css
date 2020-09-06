@@ -34,3 +34,11 @@ footer {
     background-color: orange;
     height: 3cm;
 }
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .photo-grid-item {
+    border: 2px solid black;
+  }
