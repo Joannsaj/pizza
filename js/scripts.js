@@ -43,6 +43,8 @@ $(document).ready(function () {
                 return 4500;
             } else if (this.topping === "black olives") {
                 return 4500;
+            } else if (this.topping === "green peppers") {
+                return 2500;
             } else {
                 return 1500;
             }
@@ -59,6 +61,8 @@ $(document).ready(function () {
                 return 4000;
             } else if (this.topping === "black olives") {
                 return 4000;
+            } else if (this.topping === "green peppers") {
+                return 3700;
             } else {
                 return 1400;
             }
@@ -75,13 +79,25 @@ $(document).ready(function () {
                 return 3700;
             } else if (this.topping === "black olives") {
                 return 3700;
+            } else if (this.topping === "green peppers") {
+                return 3700;
             } else {
                 return 1200;
             }
         }
     };
+    var pizzasOrdered = [];
+    $("#pizza-form").submit(function (e) {
+        e.preventDefault();
+        var sizeSelected = $("#size").val();
+        var toppingSelected = $("#topping").val();
+        var crustSelected = $("#crust").val();
 
+        var newPizza = new Pizza(sizeSelected, toppingSelected, crustSelected);
+        pizzasOrdered.push(newPizza)
+        console.log(pizzasOrdered);
 
+    });
 
 
 

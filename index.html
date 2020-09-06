@@ -57,41 +57,27 @@
 
                     <tr>
                         <th>Toppings</th>
-                        <th>Price</th>
+                        <th>Toppings</th>
                     </tr>
                     <tr>
                         <td>Pepperoni</td>
-                        <td>4,500 UGX</td>
+                        <td>Bacon</td>
                     </tr>
                     <tr>
                         <td>Mushrooms</td>
-                        <td>3,000 UGX</td>
+                        <td>Black olives</td>
                     </tr>
                     <tr>
                         <td>Onions</td>
-                        <td>1,500 UGX</td>
+                        <td>Green peppers</td>
                     </tr>
                     <tr>
                         <td>Sausage</td>
-                        <td>3,000 UGX</td>
-                    </tr>
-                    <tr>
-                        <td>Bacon</td>
-                        <td>4,500 UGX</td>
-                    </tr>
-                    <tr>
-                        <td>Black olives</td>
-                        <td>4,500 UGX</td>
-                    </tr>
-                    <tr>
-                        <td>Green peppers</td>
-                        <td>1,500 UGX</td>
-                    </tr>
-                    <tr>
                         <td>Pineapple</td>
-                        <td>2,500 UGX</td>
                     </tr>
                 </table>
+                <p class="btn-dark
+                ">Topping prices vary according to size.</p>
             </div>
         </div>
     </div>
@@ -99,22 +85,22 @@
         <div class="row order">
             <div class="col-md-12 ">
                 <h1>SELECT YOUR ORDER</h1>
-                <form action="">
+                <form id="pizza-form">
                     <div class="pizza">
                         <label for="size">Choose a size:</label>
-                        <select multiple class="form-control" id="" name="size" required>
+                        <select multiple class="form-control" id="size" name="size" required>
                             <option value="large">Large</option>
                             <option value="medium">Medium</option>
                             <option value="small">Small</option>
                         </select>
                         <label for="crust">Choose a crust:</label>
-                        <select multiple class="form-control" id="" name="crust" required>
+                        <select multiple class="form-control" id="crust" name="crust" required>
                             <option value="crispy">Crispy</option>
                             <option value="stuffed">Stuffed</option>
                             <option value="gluten free">Gluten free</option>
                         </select>
                         <label for="toppings">Choose a topping:</label>
-                        <select multiple class="form-control" id="" name="toppings" required>
+                        <select multiple class="form-control" id="topping" name="toppings" required>
                             <option value="pepperoni">Pepperoni</option>
                             <option value="mushrooms">Mushrooms</option>
                             <option value="onions">Onions</option>
@@ -124,30 +110,32 @@
                             <option value="green peppers">Green peppers</option>
                             <option value="pineapple">Pineapple</option>
                         </select>
-                        <span class="btn btn-primary" id="add-pizza">Add pizza</span>
+                        <button type="submit" class="btn-dark pt-3">add</button>
                     </div>
-                    <div class="address hide">
-                        <h2 class="btn-dark">ENTER YOUR ADDRESS</h2>
-                        <div id="address">
-                            <div class="form-group">
-                                <label for="new-name">Name</label>
-                                <input type="text" class="form-control" id="new-name" placeholder="NAME" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="new-street">Street</label>
-                                <input type="text" class="form-control new-street" placeholder="STREET" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="new-city">City</label>
-                                <input type="text" class="form-control new-city" placeholder="CITY" required>
-                            </div>
-                            <label for="phone">Enter your phone number:</label>
-
-                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </form>
+                <form></form>
+                <div class="address hide">
+                    <h2 class="btn-dark">ENTER YOUR ADDRESS</h2>
+                    <div id="address">
+                        <div class="form-group">
+                            <label for="new-name">Name</label>
+                            <input type="text" class="form-control" id="new-name" placeholder="NAME" required>
                         </div>
+                        <div class="form-group">
+                            <label for="new-street">Street</label>
+                            <input type="text" class="form-control new-street" placeholder="STREET" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="new-city">City</label>
+                            <input type="text" class="form-control new-city" placeholder="CITY" required>
+                        </div>
+                        <label for="phone">Enter your phone number:</label>
+
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                     </div>
-                    <small class="hide">Format: 123-456-7890</small>
-                    <button type="submit" class="btn-dark pt-3">CHECKOUT</button>
+                </div>
+                <small class="hide">Format: 123-456-7890</small>
+                <button type="submit" class="btn-dark pt-3">CHECKOUT</button>
                 </form>
             </div>
         </div>
