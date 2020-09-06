@@ -24,6 +24,9 @@ td {
     background-image: url(../images/download.png);
     width: 100%
 }
+.deliver {
+    display: none;
+}
 .hide {
     display: none;
 }

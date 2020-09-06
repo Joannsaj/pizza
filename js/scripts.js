@@ -108,11 +108,20 @@ $(document).ready(function () {
         }
         console.log(totalCost);
         alert("Your order for a" + " " + newPizza.size + " " + "pizza with" + " " + newPizza.topping + " " + "toppings and a" + newPizza.crust + " " + "crust, has been received. Your bill is UGX" + " " + totalCost);
+        $(".deliver").show();
     });
     $("#continue").click(function () {
         $(".hide").show();
     });
-
+    $(".address").submit(function (event) {
+        event.preventDefault();
+        var name = $("#new-name").val();
+        var street = $(".new-street").val();
+        var city = $(".new-city").val();
+        var phone = $("#phone").val();
+        totalCost += 10000;
+        alert(name + ": Your total bill is UGX. " + totalCost + ". Your order will be delivered to " + city + ", " + street + " in the next 2 hours" + " " + "We shall call you on" + " " + phone + " " + "to confirm our arrival.");
+    });
 
 
 
