@@ -6,7 +6,7 @@ $(document).ready(function () {
     }
 
     Pizza.prototype.getPizzaPrice = function () {
-        return this.getSizePrice() + this.getToppingPrice() + this.getCrustPrice();
+        return this.getSizePrice() + this.getCrustPrice() + this.getToppingPrice();
     };
 
     Pizza.prototype.getSizePrice = function () {
@@ -19,6 +19,15 @@ $(document).ready(function () {
         }
     };
 
+    Pizza.prototype.getCrustPrice = function () {
+        if (this.size === "crispy") {
+            return 3000;
+        } else if (this.size === "stuffed") {
+            return 5000;
+        } else {
+            return 4000;
+        }
+    };
 
 
 
@@ -29,5 +38,4 @@ $(document).ready(function () {
 
 
 
-
-})
+});
