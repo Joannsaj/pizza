@@ -106,8 +106,30 @@ $(document).ready(function () {
         for (let i = 0; i < pizzasOrdered.length; i++) {
             totalCost += pizzasOrdered[i].getPizzaPrice();
         }
+        $("#order-summary").append(
+            "<tr>" +
+            "<td>" +
+            newPizza.size +
+            " - " +
+            newPizza.getSizePrice() +
+            "</td>" +
+            "<td>" +
+            newPizza.topping +
+            " - " +
+            newPizza.getToppingPrice() +
+            "</td>" +
+            "<td>" +
+            newPizza.crust +
+            " - " +
+            newPizza.getCrustPrice() +
+            "</td>" +
+            "<td>" +
+            newPizza.getPizzaPrice() +
+            "</td>" +
+            "</tr>"
+        );
         console.log(totalCost);
-        alert("Your order for a" + " " + newPizza.size + "" + getSizePrice + " " + "pizza with" + " " + newPizza.topping + " " + "toppings and a" + newPizza.crust + " " + "crust, has been received. Your bill is UGX" + " " + totalCost);
+        alert("Your order for a" + " " + newPizza.size + "" + " " + "pizza with" + " " + newPizza.topping + " " + "toppings and a" + newPizza.crust + " " + "crust, has been received. Your bill is UGX" + " " + totalCost);
         $(".deliver").show();
     });
     $("#continue").click(function () {
@@ -119,12 +141,11 @@ $(document).ready(function () {
         var street = $(".new-street").val();
         var city = $(".new-city").val();
         var phone = $("#phone").val();
+        $("#new-name").val();
+        $(".new-street").val();
+        $(".new-city").val();
+        $("#phone").val();
         totalCost += 10000;
         alert(name + ": Your total bill is UGX. " + totalCost + ". Your order will be delivered to " + city + ", " + street + " in the next 2 hours" + " " + "We shall call you on" + " " + phone + " " + "to confirm our arrival.");
     });
-
-
-
-
-
 });
